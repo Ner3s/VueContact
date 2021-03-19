@@ -1,0 +1,63 @@
+// ESTRUTURA PADRÃO DE DADOS
+{
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Gwenborough",
+      "zipcode": "92998-3874",
+      "geo": {
+        "lat": "-37.3159",
+        "lng": "81.1496"
+      }
+    },
+    "phone": "1-770-736-8031 x56442",
+    "website": "hildegard.org",
+    "company": {
+      "name": "Romaguera-Crona",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "bs": "harness real-time e-markets"
+    }
+}
+
+// API
+https://jsonplaceholder.typicode.com/users
+
+// Queries utilizadas
+GetAllUsers
+https://jsonplaceholder.typicode.com/users
+
+GetUserByID
+https://jsonplaceholder.typicode.com/users/1
+
+
+GetAllUsersByName
+https://jsonplaceholder.typicode.com/users?company.bs=
+
+GetAllUsersByCompanyTag
+https://jsonplaceholder.typicode.com/users?company.bs=
+
+// ✨ Interface UI/UX
+// TAREFAS GERAIS
+
+[✔️] Criar interface no figma.
+🔗 Link UI: https://www.figma.com/proto/hRTST6D86tl2iAU1EWfGSa/Vough-Instruct?node-id=1%3A2&scaling=min-zoom
+
+[x] Inserir logo. --- não há necessidade
+[✔️] Criar select para filtrar usuário por nome ou por tag de empresa.
+[✔️] Criar campos de acesso rápido: Name, phone, email, website, username // company.name .
+
+// 💻👨🏽‍💻 Development
+// TELAS
+[✔️] Criar uma tela para mostrar todos os usuários.
+[✔️] Criar tela para mostrar usuário.
+[✔️] Criar formulário desacoplado / customizado.
+[✔️] Criar input e select.
+[✔️] Criar funções HandleSubmitForm / HandleSearch
+
+
+// Deploy ---
+https://nuxtjs.org/docs/2.x/deployment/heroku-deployment
