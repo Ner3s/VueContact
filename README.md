@@ -28,4 +28,4 @@ Para finalizar fiz o deploy no heroku:
 `yarn dev ou npm run dev`
 
 ## 👀 Preview
-![Preview](.github/video.gif)
+![Preview](.github/preview.gif)
