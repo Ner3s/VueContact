@@ -16,8 +16,9 @@
             <h2>{{ user.name }}</h2>
             <p>{{ user.username }}</p>
           </section>
-          <p>{{ user.email }}</p>
-          <p class="phone">{{ user.phone }}</p>
+          <a class="__email" :href="'mailto:' + user.email">{{ user.email }}</a>
+          <br />
+          <a class="__phone" :href="'tel:' + user.phone">{{ user.phone }}</a>
           <address class="__address">
             <h3>Endereço</h3>
             <h4>
@@ -41,18 +42,18 @@
 <script>
 export default {
   async asyncData({ $axios, params }) {
-    const user = await $axios.$get(`/users/${params.slug}`)
-    return { user }
+    const user = await $axios.$get(`/users/${params.slug}`);
+    return { user };
   },
 
   data() {
     return {
       user: [],
-    }
+    };
   },
 
   methods: {},
-}
+};
 </script>
 
 <style lang="scss" scoped="true">
@@ -64,7 +65,7 @@ export default {
   height: 100%;
   align-items: center;
   padding: 7rem 2.5rem 0 2.5rem;
-  background-image: url('../../assets/icons/Background.svg');
+  background-image: url("../../assets/icons/Background.svg");
   background-position-y: 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -136,9 +137,15 @@ export default {
     }
   }
 
-  & p.phone {
+  & a.__email {
+    color: $blue;
+    border: none;
+  }
+
+  & a.__phone {
     color: #000;
     margin-bottom: 1.5rem;
+    border: none;
   }
 
   & .__address {

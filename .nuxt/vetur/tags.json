@@ -1,0 +1,17 @@
+{
+  "Contact": {
+    "description": "Auto imported from components/Contact.vue"
+  },
+  "Header": {
+    "description": "Auto imported from components/Header.vue"
+  },
+  "Input": {
+    "description": "Auto imported from components/Input.vue"
+  },
+  "Logo": {
+    "description": "Auto imported from components/Logo.vue"
+  },
+  "Select": {
+    "description": "Auto imported from components/Select.vue"
+  }
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "name": "users-slug",
+    "path": "/users/:slug?",
+    "component": "/Users/alanneres/Documents/TESTES/Inscruct/VueNuxt/pages/users/_slug.vue",
+    "chunkName": "pages/users/_slug",
+    "_name": "_7c40321e"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/alanneres/Documents/TESTES/Inscruct/VueNuxt/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_1baece26"
+  }
+]

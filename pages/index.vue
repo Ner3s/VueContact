@@ -35,16 +35,12 @@ export default {
   },
 
   methods: {
-    /**
-     * @todo Form
-     * - Utilizei inputs customizados, porém poderia utilizar o v-model.
-     * - Preferi desse modo, por ter mais customização.
-     */
+
     handleSubmitForm($event) {
       $event.preventDefault() // Previne o padrão do formulário que é recaregar a página.
 
       /**
-       * @help Understanding
+       * @help
        * - Nesse laço For é onde os componentes do formulário são renderizados de forma dinâmica.
        * - Ex.:
        *    this.form[search] = valor do input search
